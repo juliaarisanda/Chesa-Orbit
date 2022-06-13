@@ -1,0 +1,170 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: sakit gerd 1
+  steps:
+  - user: |
+      hello!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      aku sakit 
+    intent: keluhan_awal
+  - action: utter_Gejala
+  - user: |
+      perut nya sakit 
+    intent: gejala
+  - action: utter_rasaSakit
+  - user: |
+      sakit banget kaya melilit
+    intent: rasa_sakit
+  - action: utter_gejalaLain
+  - user: |
+      mual sama muntah 
+    intent: gejala_lain
+  - action: utter_Lamasakit
+  - user: |
+      sekitar hari ini aja sih
+    intent: lamanya
+  - action: utter_QuestionGerd
+  - user: |
+      kaya terbakar gitu
+    intent: jawaban_Gerd
+  - action: utter_DiagnosaGerd
+
+- story: sakit gerd 2
+  steps:
+  - user: |
+      hello!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      aku sakit 
+    intent: keluhan_awal
+  - action: utter_Gejala
+  - user: |
+      perut nya sakit 
+    intent: gejala
+  - action: utter_rasaSakit
+  - user: |
+      sakit banget kaya melilit
+    intent: rasa_sakit
+  - action: utter_gejalaLain
+  - user: |
+      gak ada 
+    intent: gejala_lain
+  - action: utter_Lamasakit
+  - user: |
+      sekitar hari ini aja sih
+    intent: lamanya
+  - action: utter_QuestionGerd
+  - user: |
+      kaya terbakar gitu
+    intent: jawaban_Gerd
+  - action: utter_DiagnosaGerd
+
+- story: sakit maag 1
+  steps:
+  - user: |
+      hello!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      aku sakit 
+    intent: keluhan_awal
+  - action: utter_Gejala
+  - user: |
+      perut nya sakit 
+    intent: gejala
+  - action: utter_rasaSakit
+  - user: |
+      sakit banget kaya melilit
+    intent: rasa_sakit
+  - action: utter_gejalaLain
+  - user: |
+      mual sama muntah 
+    intent: gejala_lain
+  - action: utter_Lamasakit
+  - user: |
+      sekitar hari ini aja sih
+    intent: lamanya
+  - action: utter_QuestionGerd
+  - user: |
+      engga nyeri ches
+    intent: tidak_gerd
+  - action: utter_QuestionMaag
+  - user: |
+      iya nih, sakit ulu hati nya
+    intent: jawaban_maag
+  - action: utter_DiagnosaMaag
+
+- story: sakit maag 2
+  steps:
+  - user: |
+      hello!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      aku sakit 
+    intent: keluhan_awal
+  - action: utter_Gejala
+  - user: |
+      perut nya sakit 
+    intent: gejala
+  - action: utter_rasaSakit
+  - user: |
+      sakit banget kaya melilit
+    intent: rasa_sakit
+  - action: utter_gejalaLain
+  - user: |
+      gak ada
+    intent: gejala_lain
+  - action: utter_Lamasakit
+  - user: |
+      sekitar hari ini aja sih
+    intent: lamanya
+  - action: utter_QuestionGerd
+  - user: |
+      engga nyeri ches
+    intent: tidak_gerd
+  - action: utter_QuestionMaag
+  - user: |
+      iya nih, sakit ulu hati nya
+    intent: jawaban_maag
+  - action: utter_DiagnosaMaag
+
+- story: tidak terdiagnosa 1
+  steps:
+  - user: |
+      hello!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      aku sakit 
+    intent: keluhan_awal
+  - action: utter_Gejala
+  - user: |
+      perut nya sakit 
+    intent: gejala
+  - action: utter_rasaSakit
+  - user: |
+      sakit banget kaya melilit
+    intent: rasa_sakit
+  - action: utter_gejalaLain
+  - user: |
+      gak ada
+    intent: gejala_lain
+  - action: utter_Lamasakit
+  - user: |
+      sekitar hari ini aja sih
+    intent: lamanya
+  - action: utter_QuestionGerd
+  - user: |
+      engga nyeri
+    intent: tidak_gerd
+  - action: utter_QuestionMaag
+  - user: |
+      engga kembung
+    intent: tidak_maag
+  - action: utter_NoDiagnosa

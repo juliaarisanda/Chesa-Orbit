@@ -1,0 +1,102 @@
+version: "2.0"
+
+intents:
+  - greet
+  - keluhan_awal
+  - gejala
+  - rasa_sakit
+  - gejala_lain
+  - lamanya
+  - jawaban_Gerd
+  - jawaban_maag
+  - out_of_scope
+  - tidak_gerd
+  - tidak_maag
+
+responses:
+  utter_greet:
+  - text: "Hallo aku Chesa (Check Health Secretary ) sekretaris kesehatan pribadimu. Ada yang bisa chesa bantu?"
+
+  utter_Gejala:
+  - text: "Gejala apa yang dirasain ka?"
+
+  utter_rasaSakit:
+  - text: "Sakit nya gimana nih ka?"
+
+  utter_gejalaLain:
+  - text: "Apa sakitnya di sertai gelaja lain ?"
+
+  utter_Lamasakit:
+  - text: "Sudah berapa lama sakitnya ka?"
+
+  utter_QuestionGerd:
+  - text: "Apakah merasakan nyeri di dada? Jika ada, rasa nyeri itu seperti apa?"
+
+  utter_QuestionMaag:
+  - text: "Apakah merasakan sakit di ulu hati dan perut terasa kembung?"
+
+  utter_NoDiagnosa:
+  - text: "Berdasarkan gejala yang anda alami, tidak ada gejala yang mengarahkan bahwa anda mengalami penyakit GERD ataupun Maag. \n 
+    Namun jika anda merasakan keluhan nyeri di dada hingga merasakan sensasi terbakar, maka anda dapat mengunjungi CHESA kembali untuk mengetahui diagnosa sementara dan melakukan konsultasi secara langsung dengan dokter di rumah sakit/klinik terdekat. \n
+    Mohon untuk jaga kesehatan selalu ya, Terima kasih sudah mengunjungi CHESA."
+
+  utter_DiagnosaGerd:
+  - text: "Berdasarkan gejala yang dialami, kemungkinan anda berisiko untuk mengalami penyakit asam lambung atau yang disebut dengan Gastroesophageal Reflux Disease (GERD). Dimana keluhan merasakan sensasi terbakar di dada yang membuat anda merasa tidak nyaman.
+
+    Gastroesophageal reflux disease  atau GERD adalah penyakit kronis pada sistem pencernaan. Kondisi ini terjadi ketika asam lambung naik kembali ke esofagus (kerongkongan). Hali ini terjadi akibat melemahnya sfingter (katup). Hal tersebut bisa menyebabkan iritasi pada esofagus.
+
+    Seseorang dapat mengalami GERD lambung ringan setidaknya dua kali dalam seminggu. Sedangkan kondisi GERD sedang sampai berat setidaknya 1 kali dalam seminggu. Gangguan yang cukup berat dan mengganggu aktivitas serta tidur juga bisa menjadi indikasi GERD.
+
+    Penyebab GERD adalah kegagalan relaksasi cincin (sfingter) yang bertugas mengatur proses buka-tutup pintu/klep yang menghubungkan esofagus bawah dengan lambung. 
+    Ada beberapa makanan yang dapat menjadi faktor yang memicu GERD, antara lain kopi, alkohol, cokelat, makanan yang digoreng, saus tomat, serta bawang putih dan merah.
+
+    Risiko penyakit GERD adalah kebiasaan buruk yang dilakukan secara sadar maupun tidak, seperti :
+    1. Merokok
+    2. Kebiasaan mengonsumsi makanan dalam waktu 3 jam sebelum tidur
+    3. Mengurangi porsi makan yang dikonsumsi
+
+    Pengobatan dilakukan untuk meredakan gejala yang muncul dan mencegah kambuhnya gejala. Beberapa gaya hidup untuk mengatasi GERD yaitu, hindari pemicu refluks, makan dalam porsi kecil, jangan berbaring setelah makan, cek obat yang sedang dikonsumsi,  berhenti merokok, batasi konsumsi minuman beralkohol.
+    Jika dengan perubahan gaya hidup dan obat obatan tidak membaik, mungkin dokter akan menganjurkan pasien menjalani operasi.
+
+    Terapi GERD dapat dilakukan dengan mengonsumsi obat penekan asam lambung, seperti omeprazole, lansoprazole, pantoprazole. Obat ini dikonsumsi sebelum makan.
+    Jika tidak diatasi dengan baik, maka jaringan tissue dalam esofagus akan semakin tipis akibat paparan asam dari saluran cerna. Lama kelamaan jaringan ini akan rusak, dan proses pencernaan menjadi sangat terganggu.
+
+    Silahkan untuk konsultasi dengan dokter langsung di Rumah sakit atau klinik terdekat.
+
+    Terima kasih sudah mengunjungi Chesa. Semoga lekas sembuh"
+  
+  utter_DiagnosaMaag:
+  - text: "Berdasarkan gejala yang dialami, kemungkinan anda hanya mengalami penyakit Maag bukan Gastroesophageal Reflux Disease (GERD). Dimana tidak ada keluhan sensasi terbakar didada. \n
+
+    Sakit Maag atau istilah medisnya disebut dengan dispepsia adalah rasa nyeri dan tidak nyaman pada lambung yang disebabkan oleh sejumlah kondisi. Gejala ini paling sering terjadi selama atau beberapa saat setelah makan. \n
+
+    Meskipun gejala yang dialami oleh penyakit maag dan GERD mirip, tetapi kedua penyakit ini berbeda. Dimaja gejala GERD cenderung lebih berat, dan terdapat perbedaan dari sisi penyebab. \n
+
+    Sakit maag dapat disebabkan oleh penyakit, seperti tukak lambung, infeksi bakteri Helicobacter pylori, atau peradangan pada lambung (gastritis). Penggunaan obat-obatan, seperti obat antiinflamasi nonsteroid (OAINS), juga dapat menyebabkan sakit maag. \n
+
+    Ada beberapa faktor pemicu Maag, antara lain mengonsumsi makanan pedas, berlemak dan berminyak, makan terlalu banyak dan cepat, langsung berbaring setelah makan, minum alkohol berlebihan, dan merokok. \n
+
+    Risiko penyakit maag yang tidak diobati dengan tepat ini akan mengganggu fungsi kerongkongan, yakni memindahkan makanan atau cairan dari mulut ke perut. \n
+
+    Pengobatan untuk sakit maag tergantung pada penyebab dan tingkat keparahan gejala. Apabila gejalanya ringan, perubahan gaya hidup mungkin sudah bisa meredakannya. Beberapa gaya hidup untuk mengatasi sakit maag : \n
+    1. Kurangi makanan berlemak dan pedas. \n
+    2. Kurangi konsumsi minuman beralkohol dan berkafein. \n
+    3. Tidur setidaknya selama 7 jam setiap malam juga bisa membantu meredakan sakit maag ringan. \n
+    4. Berolahraga secara teratur dan berhenti merokok. \n
+
+    Dengan melakukan perubahan gaya hidup maka perlahan penyakit maag ini akan sembuh, tergantung dari awal faktor penyebab maag yang dialami. \n
+
+    Ada berbagai macam pengobatan dan perawatan yang tersedia, tergantung pada penyebab maag. Pilihan pengobatan tersebut meliputi = antasida, antagonis reseptor h-2, penghambat pompa proton (PPI), prokinetik, antibiotik, antidepresan. Obat ini harus disesuaikan dengan gejala yang dialami dan dengan anjuran dokter. \n
+
+    Jika tidak diatasi dengan baik dan tidak mengubah gaya hidup, maka penyakit maag ini akan menjadi maag kronis atau akut bisa menimbulkan bahaya, seperti esofagitis. Ini menandakan adanya peradangan yang dapat merusak jaringan di kerongkongan. \n
+
+    Silahkan untuk konsultasi dengan dokter langsung di Rumah sakit atau klinik terdekat. \n
+
+    Terima kasih sudah mengunjungi Chesa. Semoga lekas sembuh"
+
+  utter_out_of_scope:
+  - text: "Maaf, saya tidak mengerti. Bisa diulangi?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

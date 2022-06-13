@@ -1,0 +1,63 @@
+version: "2.0"
+
+stories:
+
+- story: sakit gerd
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: keluhan_awal
+  - action: utter_Gejala
+  - intent: gejala
+  - action: utter_rasaSakit
+  - intent: rasa_sakit
+  - action: utter_gejalaLain
+  - intent: gejala_lain
+  - action: utter_Lamasakit
+  - intent: lamanya
+  - action: utter_QuestionGerd
+  - intent: jawaban_Gerd
+  - action: utter_DiagnosaGerd
+  
+
+- story: sakit maag
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: keluhan_awal
+  - action: utter_Gejala
+  - intent: gejala
+  - action: utter_rasaSakit
+  - intent: rasa_sakit
+  - action: utter_gejalaLain
+  - intent: gejala_lain
+  - action: utter_Lamasakit
+  - intent: lamanya
+  - action: utter_QuestionGerd
+  - intent: tidak_gerd
+  - action: utter_QuestionMaag
+  - intent: jawaban_maag
+  - action: utter_DiagnosaMaag
+
+- story: tidak terdiagnosa
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: keluhan_awal
+  - action: utter_Gejala
+  - intent: gejala
+  - action: utter_rasaSakit
+  - intent: rasa_sakit
+  - action: utter_gejalaLain
+  - intent: gejala_lain
+  - action: utter_Lamasakit
+  - intent: lamanya
+  - action: utter_QuestionGerd
+  - intent: tidak_gerd
+  - action: utter_QuestionMaag
+  - intent: tidak_maag
+  - action: utter_NoDiagnosa
+
+
+
+

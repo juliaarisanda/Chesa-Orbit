@@ -1,0 +1,180 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hai
+    - hei
+    - hallo
+    - halo
+    - helo
+    - hai chesa
+    - hey chesa
+
+- intent: keluhan_awal
+  examples: |
+    - aku lagi ngerasain sakit nih
+    - kayanya aku sakit
+    - chesa hari ini aku ga enak badan
+    - duh chesa badan gue ko ga enak ya
+    - badan aku lagi kurang sehat, ga enak juga
+    - sakit
+    - gaenak badan
+    - gak enak badan
+    - tidak enak badan
+    - aku pusing ches
+    - perut aku sakit ches
+    - gue pusing banget
+    - gue sakit perut
+    - gue sakit nih
+
+- intent: gejala
+  examples: |
+    - perut nya sakit
+    - sakit perut
+    - napas
+    - bernapas
+    - batuk kering
+    - tenggorokan sakit
+    - kerongkongan sakit
+    - leher sakit
+    - sakit tenggorokan
+    - sendawa
+    - begah
+    - perut bagian kanan sakit
+    - lambung sakit
+    - aku pusing chess
+    - sakit perut gitu ches
+    - sakit perut aja nih
+    - cuma pusing
+    - pusing
+    - perutnya sakit banget
+    - sakit perut doang
+    - cuma pusing aja
+    - kepala nya sakit
+
+- intent: rasa_sakit
+  examples: |
+    - ditusuk
+    - menusuk
+    - nusuk
+    - sulit
+    - susah
+    - sakit banget
+    - perih
+    - perih banget
+    - kaya melilit
+
+- intent: gejala_lain
+  examples: |
+    - muntah
+    - mual
+    - kembung
+    - batuk
+    - ulu hati
+    - dada 
+    - perut
+    - lambung
+    - enggak
+    - gak
+    - tidak
+    - gaada 
+    - tidak ada
+    - gak ada
+
+- intent: lamanya
+  examples: |
+    - 1 
+    - 2 
+    - 3 
+    - 4 
+    - 5 
+    - 6 
+    - 7 
+    - seminggu
+    - semingguan
+    - satu 
+    - dua 
+    - tiga 
+    - empat 
+    - lima 
+    - enam 
+    - tujuh 
+    - satu minggu
+    - delapan
+    - sembilan
+    - sepuluh
+    - 9 
+    - 8 
+    - 10 
+    - hari
+    - hari ini
+    - pagi ini
+    - malam ini
+    - siang ini
+    - sore ini
+    - sekitar hari ini
+
+
+- intent: jawaban_Gerd
+  examples: |
+    - ada, nyeri seperti terbakar
+    - ada
+    - sensasi terbakar
+    - terbakar
+    - panas
+    - kebakar
+    - iya, ada
+    - panas, seperti terbakar
+    - iya, ada kaya terbakar
+    - iya nih, kaya kebakar gitu
+    - ada, panas kaya kebakar
+  
+
+- intent: tidak_gerd
+  examples: |
+    - tidak ada ches
+    - gaada nih
+    - enggak ada ches
+    - engga ada tuh
+    - gak ada sih ches
+    - tidak sakit
+    - dada gak nyeri
+    - engga nyeri
+    - ga nyeri
+    - enggak nyeri
+    - gak nyeri
+    - tidak nyeri
+    - tidak terasa nyeri
+
+- intent: jawaban_maag
+  examples: |
+    - iya, sakit ulu hati
+    - ada, sampe kembung
+    - iyah ada nih
+    - terasa sakit di ulu hati
+    - iya perut kembung dan ulu hati sakit
+    - ada, ulu hati kerasa sakit banget
+
+- intent: tidak_maag
+  examples: |
+    - engga sakit ulu hati
+    - gasakit
+    - gaada ches
+    - ganyeri ches
+    - ga kembung
+    - gak kembung
+    - enggak ada sakit
+    - enggak ada kembung
+    - gak sakit ulu hati
+
+
+- intent: out_of_scope
+  examples: |
+    - giginya bengkak
+    - seneng banget aku
+    - kakinya linu
+    - sedih banget
